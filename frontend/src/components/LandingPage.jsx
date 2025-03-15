@@ -231,4 +231,68 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+{/* Newsletter */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-6">
+          <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+            <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Stay Updated</h2>
+            <p className="text-gray-600 mb-6 text-center">
+              Subscribe to our newsletter to receive updates on new reforms and community insights.
+            </p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0">
+              <input 
+                type="email" 
+                placeholder="Your email address" 
+                className="flex-grow px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-green-600 sm:rounded-r-none"
+              />
+              <button className="bg-green-700 text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition sm:rounded-l-none">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer id="contact" className="bg-gray-800 text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-lg font-bold mb-4">Bangladesh Reform Tracker</h3>
+              <p className="text-gray-400">
+                Empowering citizens through transparency and participation in governance.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
+                <li><a href="#features" className="text-gray-400 hover:text-white transition">Features</a></li>
+                <li><a href="#reforms" className="text-gray-400 hover:text-white transition">Active Reforms</a></li>
+                <li><a href="#about" className="text-gray-400 hover:text-white transition">About Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Connect</h3>
+              <ul className="space-y-2">
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Facebook</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Twitter</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+                <li><a href="#" className="text-gray-400 hover:text-white transition">Instagram</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold mb-4">Contact</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>Dhaka, Bangladesh</li>
+                <li>info@bdreformtracker.org</li>
+                <li>+880 1XXX-XXXXXX</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; {new Date().getFullYear()} Bangladesh Reform Tracker. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
 export default LandingPage;
